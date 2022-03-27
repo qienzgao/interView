@@ -10,7 +10,8 @@ const FeedbacksReducer = (state = {}, action) => {
   let newState = Object.assign({}, state);
   switch (action.type) {
     case RECEIVE_VIDEO_FEEDBACKS:
-      newState = Object.assign(newState, action.feedbacks.data );
+      newState = {};
+      newState = Object.assign(newState, action.feedbacks.data);
       return newState;
     case RECEIVE_VIDEO_FEEDBACK:
       if (newState === {}) {

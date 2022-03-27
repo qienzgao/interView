@@ -22,7 +22,11 @@ class ShowFeedbackIndexItem extends React.Component {
 
   handleDelete() {
     this.props.deleteVideoFeedbacks(this.props.feedbackId)
-    this.props.history.push(`/videos/${this.props.videoId}`)
+    if (this.props.videoId !== undefined) {
+      this.props.history.push(`/videos/${this.props.videoId}`)
+    } else {
+      this.props.history.push(`${this.props.history.location.pathname}`)
+    }
   }
 
   renderOptionButtons() {
