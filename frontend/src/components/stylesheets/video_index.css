@@ -15,19 +15,37 @@
     /* background-color: green; */
 }
 
+.vi-swipe{
+    /* background-color: green; */
+    /* display: flex; */
+}
+
+.vi-slide{
+    /* background-color: orange; */
+    /* width: 20vw; */
+    /* display: flex; */
+    /* width: 79vw;
+    height: 20vh; */
+}
+
 .vi-thumbnail{
+    /* background-color: green; */
     display: flex;
     width: 79vw;
     height: 20vh;
     justify-content: space-evenly;
+    /* overflow-y: auto; */
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
 }
 
 .vi-img-container{
     /* display: flex; */
-    /* background-color: green; */
+    /* padding-top: 1vh; */
+    /* background-color: blue; */
     transition: margin 0.2s ease-in-out;
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 95%;
 }
 
 .vi-img-container:hover{
@@ -35,6 +53,7 @@
 }
 
 .vi-img{
+    /* background-color: blue; */
     width: 97%;
     height: 100%;
     border-radius: 5%;
