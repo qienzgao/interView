@@ -41,6 +41,7 @@
     "passport-jwt": "^4.0.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.3",
+    "swiper": "^8.0.7",
     "validator": "^13.7.0"
   },
   "devDependencies": {

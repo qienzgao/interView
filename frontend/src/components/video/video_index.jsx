@@ -1,5 +1,7 @@
 import React from 'react'
 import VideoItem from './video_item'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore from 'swiper'
 import thumbnail1 from '../../thumbnails/thumbnail1.png'
 import thumbnail2 from '../../thumbnails/thumbnail2.png'
 import thumbnail3 from '../../thumbnails/thumbnail3.png'
@@ -69,12 +71,17 @@ class VideoIndex extends React.Component {
                 <div className='vi-row'>
                     <h2 className='vi-question'>{questions[0]}</h2>
                     <div className='vi-thumbnail'>
-                        {
-                            videos.map((video, idx) => (
-                                questions[0] === video.question ? 
-                                <VideoItem key={idx} video={video} image={pics[idx]} /> : null
-                            ))
-                        }
+                        {/* <Swiper className="vi-swipe"> */}
+                            {
+                                videos.map((video, idx) => (
+                                    questions[0] === video.question ? 
+                                    // <SwiperSlide className='vi-slide'>
+                                        <VideoItem key={idx} video={video} image={pics[idx]} />
+                                        // </SwiperSlide>
+                                         : null
+                                ))
+                            }
+                        {/* </Swiper> */}
                     </div>
                 </div>
                 <div className='vi-row'>
