@@ -10,7 +10,6 @@ class ShowRubrics extends React.Component {
     }
 
     render() {
-
         if (this.props.avgrubrics.professionalismRating === undefined || this.props.avgrubrics.professionalismRating === false) {
             return (
                 <div className="rubric">
@@ -46,15 +45,15 @@ class ShowRubrics extends React.Component {
             );
         }
 
-        let proWidth = Math.floor((this.props.avgrubrics.professionalismRating / 5) * 100) + '%';
-        let confWidth = Math.floor((this.props.avgrubrics.confidenceRating / 5) * 100) + '%';
-        let contWidth = Math.floor((this.props.avgrubrics.contentRating / 5) * 100) + '%';
-        let voiWidth = Math.floor((this.props.avgrubrics.voiceRating / 5) * 100) + '%';
+        let proWidth = (this.props.avgrubrics.professionalismRating / 5) * 100 + '%';
+        let confWidth = (this.props.avgrubrics.confidenceRating / 5) * 100 + '%';
+        let contWidth = (this.props.avgrubrics.contentRating / 5) * 100 + '%';
+        let voiWidth = (this.props.avgrubrics.voiceRating / 5) * 100 + '%';
         let average = (
-            (Math.floor(this.props.avgrubrics.professionalismRating)
-                + Math.floor(this.props.avgrubrics.confidenceRating)
-                + Math.floor(this.props.avgrubrics.contentRating)
-                + Math.floor(this.props.avgrubrics.voiceRating)) / 4
+            ((this.props.avgrubrics.professionalismRating)
+                + (this.props.avgrubrics.confidenceRating)
+                + (this.props.avgrubrics.contentRating)
+                + (this.props.avgrubrics.voiceRating)) / 4
         ).toFixed(1); 
 
         return (

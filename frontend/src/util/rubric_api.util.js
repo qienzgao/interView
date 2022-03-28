@@ -11,8 +11,8 @@ export const fetchUserRubrics = userId => {
 };
 
 // score rubric for a video
-export const createRubric = data => {
-    return axios.post('/api/rubrics/new', data);
+export const createRubric = rubric => {
+    return axios.post('/api/rubrics/new', rubric);
 }
 
 // delete a rubric for a video
