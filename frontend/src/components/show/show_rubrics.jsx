@@ -2,17 +2,14 @@ import React from "react";
 
 class ShowRubrics extends React.Component {
     constructor(props) {
-        debugger
         super(props);
     }
 
     componentDidMount() {
-        debugger
         this.props.fetchVideoRubrics(this.props.videoId);
     }
 
     render() {
-        debugger
         if (this.props.avgrubrics.professionalismRating === undefined || this.props.avgrubrics.professionalismRating === false) {
             return (
                 <div className="rubric">

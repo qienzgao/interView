@@ -19,7 +19,6 @@ class RubricForm extends React.Component {
         this.props.createRubric(this.state);
         setTimeout(() => {
             this.props.fetchVideoRubrics(this.props.videoId);
-            debugger
             document.getElementById('professionalism-box').value = '';
             document.getElementById('confidence-box').value = '';
             document.getElementById('content-box').value = '';
