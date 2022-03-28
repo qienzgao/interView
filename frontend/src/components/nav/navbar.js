@@ -28,9 +28,9 @@ class NavBar extends React.Component {
                         </div>
                     </div>
 
-                    <div className='search-bar-container'>
+                    {/* <div className='search-bar-container'>
                         <input className="search-bar" type="text" placeholder='Search' />
-                    </div>
+                    </div> */}
 
                     <div className='functional-buttons-container'>
                         <div className='load-button-wrapper'>

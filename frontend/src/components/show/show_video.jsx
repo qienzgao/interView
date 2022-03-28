@@ -71,6 +71,7 @@ class VideoShowPage extends React.Component {
                         <ShowFeedbacksContainer videoId={this.props.videoId} history={this.props.history}/>
                     </div>
                     <div className='sidebar'>
+                        <h2>Average Scores</h2>
                         <ShowRubricsContainer videoId={this.props.videoId} />
                         <RubricFormContainer videoId={this.props.videoId} />
                         <br className='checkout-other'/>

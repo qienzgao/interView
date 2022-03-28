@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+.rubric h2 {
+    text-align: center;
+    display: flex;
+}
+
 .rubric-form-container {
     width: 100%;
     height: auto;

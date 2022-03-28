@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 class PostVideoForm extends React.Component {
   constructor(props) {
@@ -54,6 +55,9 @@ z
 
           <div className='vf-title'>
             <h1>Create your View</h1>
+            <button onClick={() => this.props.history.goBack()} className="close-button">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
 
           <div className='vf-info'>

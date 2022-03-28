@@ -32,13 +32,13 @@ class FeedbackForm extends React.Component {
         <div className="create-feedback-input-container">
           <input
             id='feedback-positive-input'
-            placeholder="What did the interviewer do well?"
+            placeholder="What did the interviewee do well?"
             defaultValue={this.props.feedback.positive}
             onChange={this.update('positive')}
           />
           <input
             id='feedback-negative-input'
-            placeholder="How can the interviewer improve?"
+            placeholder="How can the interviewee improve?"
             defaultValue={this.props.feedback.negative}
             onChange={this.update('negative')}
           />
@@ -46,7 +46,7 @@ class FeedbackForm extends React.Component {
           <button
             className="feedback-submit-buttton"
             onClick={this.handleSubmit}>
-            Give your feedbacks!
+            Post your feedback
           </button>
       </div>
     )

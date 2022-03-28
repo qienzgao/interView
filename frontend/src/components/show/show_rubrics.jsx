@@ -15,7 +15,7 @@ class ShowRubrics extends React.Component {
             return (
                 <div className="rubric">
                     <div className="details">
-
+                        
                         <h3 className="professionalism-rating">Professionalism</h3>
                         <div className="professionalism-rating-bar" style={{ width: "15%" }}>
                             <span className="rating-ani">0</span>
@@ -59,8 +59,9 @@ class ShowRubrics extends React.Component {
 
         return (
             <div className="rubric">
+                
                 <div className="details">
-
+                    
                     <h3 className="professionalism-rating">Professionalism</h3>
                     <div className="professionalism-rating-bar" style={{ width: proWidth }}>
                         <span className="rating-ani">{(this.props.avgrubrics.professionalismRating).toFixed(1)}</span>

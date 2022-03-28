@@ -39,8 +39,8 @@ class VideoShow extends React.Component {
     return (
       <div className='feedbacks-container'>
         <div className='feedback-class'>
-          <button className="positive-title" style={{borderBottom: positiveBorder, color: positiveStyle}} onClick={this.positiveSwitch.bind(this)}>YOU DID GREAT ON THESE</button>
-          <button className='negative-title' style={{borderBottom: negativeBorder, color: negativeStyle }} onClick={this.negativeSwitch.bind(this)}>STILL NEED TO IMPROVE</button>
+          <button className="positive-title" style={{ borderBottom: positiveBorder, color: positiveStyle }} onClick={this.positiveSwitch.bind(this)}>POSITIVE FEEDBACK</button>
+          <button className='negative-title' style={{ borderBottom: negativeBorder, color: negativeStyle }} onClick={this.negativeSwitch.bind(this)}>IMPROVEMENT FEEDBACK</button>
         </div>
 
         <div>
