@@ -171,7 +171,7 @@
     outline: 1px solid rgb(174, 206, 255);
 }
 
-.feedback-submit-buttton {
+/* .feedback-submit-buttton {
     float:right;
     border: solid 1px;
     border-color: transparent;
@@ -186,4 +186,23 @@
 .feedback-submit-buttton:hover {
     color: rgb(50, 130, 100); 
     border-bottom: solid 1px rgb(50, 130, 100);
+} */
+
+.feedback-submit-buttton {
+    float: right;
+    width: 20%;
+    height: 15%;
+    background-color: transparent;
+    border: solid 2px rgb(50, 130, 100);
+    border-radius: 15px;
+    color: rgb(50, 130, 100);
+    cursor: pointer;
+    font-size: 1em;
+    margin: 1.3em 0 1.3em 0;
+    padding: 5px;
+}
+
+.feedback-submit-buttton:hover {
+    background-color: rgb(50, 130, 100);
+    color: white;
 }

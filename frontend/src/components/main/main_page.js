@@ -81,7 +81,7 @@ class MainPage extends React.Component {
                                 <div className="personal-links">
                                     <h3>Jonathan Kim</h3>
                                     <br />
-                                    <a href='https://github.com/hwkcode' target="_blank">LinkedIn</a>
+                                    <a href='https://www.linkedin.com/in/jonathankimmbapmp/' target="_blank">LinkedIn</a>
                                     <br />
                                     <a href='https://github.com/hwkcode' target="_blank">Github</a>
                                     <br />

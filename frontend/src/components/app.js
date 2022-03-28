@@ -16,8 +16,9 @@ import AllModals from "./modal/modal_container";
 import NavBarContainer from './nav/navbar_container';
 import MainPage from './main/main_page';
 import VideoShowPageContainer from './show/show_video_container';
-import PostVideoFormContainer from './video/post_video_form_container'
-import VideoIndexContainer from './video/video_index_container'
+import PostVideoFormContainer from './video/post_video_form_container';
+import VideoIndexContainer from './video/video_index_container';
+import AboutLinks from './show/about_page'
 
 
 const App = () => (
@@ -29,6 +30,7 @@ const App = () => (
             <ProtectedRoute exact path="/videoindex" component={VideoIndexContainer}/>
             <ProtectedRoute exact path="/users" component={PostVideoFormContainer}/>
             <ProtectedRoute path="/videos/:videoId" component={VideoShowPageContainer} />
+            <ProtectedRoute exact path="/about" component={AboutLinks}/>
         </Switch>
     </div>
 );

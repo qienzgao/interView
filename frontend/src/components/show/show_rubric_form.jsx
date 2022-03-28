@@ -48,11 +48,11 @@ class RubricForm extends React.Component {
 
                     <div className='send-rubric-button'>
                         <h2 className="title">
-                            Score
+                            Give
                             <br />
-                            and
+                            your
                             <br />
-                            improve</h2>
+                            scores</h2>
                         <button type="submit" onChange={this.change}>Send</button>
                     </div>
 

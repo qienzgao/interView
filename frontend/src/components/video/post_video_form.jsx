@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class PostVideoForm extends React.Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class PostVideoForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.redirectToShow = this.redirectToShow.bind(this)
     this.handleRedirect = this.handleRedirect.bind(this);
+    this.goBack = this.goBack.bind(this); 
   }
 
   handleSubmit(e) {
@@ -23,8 +25,9 @@ z
       if (key === 'question' || key === 'experience' || key === 'industry') {
         this.setState({[key]: e.currentTarget.value})
       } else {
-        this.setState({[key]: e.target.files[0]})
-        alert('file attached')
+        this.setState({[key]: e.target.files[0]});
+        alert('file attached');
+        
       }
     }
   }
@@ -47,19 +50,27 @@ z
       if (newVideoId === undefined) this.props.history.push('/')
     }
 
+    goBack(){
+      this.props.history.goBack();
+    }
+
   render() {
     return (
       <div className='create-form-background'>
         <form className="vf">
-
           <div className='vf-title'>
             <h1>Create your View</h1>
+            <Link to="/videoindex">
+              <button onClick={this.goBack} className="close-button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </Link>
           </div>
 
           <div className='vf-info'>
 
             <div className='vf-upload-container'>
-              <input className='vf-upload' type="file" onChange={this.handleChange('file')}>
+              <input className='vf-upload' type="file" onChange={this.handleChange('file')} style={this.state.file ? { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/success.png)` } : { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/videoupload.png)`} }>
               </input>
               <span className='upload-text'>Drag and drop your View to upload</span>
               <button className='vf-submit' onClick={this.handleSubmit}>Create</button>
