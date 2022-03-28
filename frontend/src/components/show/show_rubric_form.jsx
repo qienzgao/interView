@@ -17,19 +17,23 @@ class RubricForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.createRubric(this.state);
-        this.props.fetchVideoRubrics(this.props.videoId);
-        document.getElementById('professionalism-box').value = '';
-        document.getElementById('confidence-box').value = '';
-        document.getElementById('content-box').value = '';
-        document.getElementById('voice-box').value = '';
-        this.setState({
-            user: this.props.currentUser.id,
-            video: this.props.videoId,
-            professionalism: 0,
-            confidence: 0,
-            content: 0,
-            voice: 0
-        });
+        setTimeout(() => {
+            this.props.fetchVideoRubrics(this.props.videoId);
+            debugger
+            document.getElementById('professionalism-box').value = '';
+            document.getElementById('confidence-box').value = '';
+            document.getElementById('content-box').value = '';
+            document.getElementById('voice-box').value = '';
+            this.setState({
+                user: this.props.currentUser.id,
+                video: this.props.videoId,
+                professionalism: 0,
+                confidence: 0,
+                content: 0,
+                voice: 0
+            });
+
+        }, 0);
     }
 
     update(property) {

@@ -5,11 +5,11 @@ const RubricsReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_RUBRIC:
-      
-            return Object.assign({}, nextState, {[action.rubric.id]: action.rubric})
+            debugger
+            return Object.assign({}, nextState, action.rubric.data)
         case RECEIVE_RUBRICS:
-          
-            return action.rubrics;
+            debugger
+            return action.rubrics.data;
         case REMOVE_RUBRIC:
             delete nextState[action.rubricId];
             return nextState;

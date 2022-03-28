@@ -5,6 +5,7 @@ const avgRubricsReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_RUBRICS:
+            debugger
             return Object.assign({}, nextState, {
                 "professionalismRating": (action.rubrics.data.reduce((rubric, { professionalism }) => rubric + professionalism, 0) / action.rubrics.data.length) || 0,
                 "confidenceRating": (action.rubrics.data.reduce((rubric, { confidence }) => rubric + confidence, 0) / action.rubrics.data.length) || 0,

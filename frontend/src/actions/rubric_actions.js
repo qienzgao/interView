@@ -43,8 +43,8 @@ export const fetchUserRubrics = userId => dispatch => (
         .then(rubrics => dispatch(receiveRubrics(rubrics)))
 );
 
-export const createRubric = data => dispatch => (
-    RubricAPIUtil.createRubric(data)
+export const createRubric = rubric => dispatch => (
+    RubricAPIUtil.createRubric(rubric)
         .then(rubric => (dispatch(receiveRubric(rubric))),
             err => (dispatch(receiveRubricErrors(err.response.data))))
 );
