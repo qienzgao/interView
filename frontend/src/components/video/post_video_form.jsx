@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class PostVideoForm extends React.Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class PostVideoForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.redirectToShow = this.redirectToShow.bind(this)
     this.handleRedirect = this.handleRedirect.bind(this);
+    this.goBack = this.goBack.bind(this); 
   }
 
   handleSubmit(e) {
@@ -48,16 +49,21 @@ z
       if (newVideoId === undefined) this.props.history.push('/')
     }
 
+    goBack(){
+      this.props.history.goBack();
+    }
+
   render() {
     return (
       <div className='create-form-background'>
         <form className="vf">
-
           <div className='vf-title'>
             <h1>Create your View</h1>
-            <button onClick={() => this.props.history.goBack()} className="close-button">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <Link to="/videoindex">
+              <button onClick={this.goBack} className="close-button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </Link>
           </div>
 
           <div className='vf-info'>

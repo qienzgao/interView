@@ -35,9 +35,11 @@ class NavBar extends React.Component {
                     <div className='functional-buttons-container'>
                         <div className='load-button-wrapper'>
                             <div className='load-button-container'>
-                                <button className='profile-button'>
-                                    <FaceIcon fontSize='large' color="action"/>
-                                </button>
+                                <Link to="/about">
+                                    <button className='profile-button'>
+                                        <FaceIcon fontSize='large' color="action"/>
+                                    </button>
+                                </Link> 
                             </div>
                             <span className='button-function'>Profile</span>
                         </div>
