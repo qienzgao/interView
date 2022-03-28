@@ -25,8 +25,9 @@ z
       if (key === 'question' || key === 'experience' || key === 'industry') {
         this.setState({[key]: e.currentTarget.value})
       } else {
-        this.setState({[key]: e.target.files[0]})
-        alert('file attached')
+        this.setState({[key]: e.target.files[0]});
+        alert('file attached');
+        
       }
     }
   }
@@ -69,7 +70,7 @@ z
           <div className='vf-info'>
 
             <div className='vf-upload-container'>
-              <input className='vf-upload' type="file" onChange={this.handleChange('file')}>
+              <input className='vf-upload' type="file" onChange={this.handleChange('file')} style={this.state.file ? { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/success.png)` } : { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/videoupload.png)`} }>
               </input>
               <span className='upload-text'>Drag and drop your View to upload</span>
               <button className='vf-submit' onClick={this.handleSubmit}>Create</button>
