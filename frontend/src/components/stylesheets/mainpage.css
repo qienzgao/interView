@@ -306,14 +306,14 @@ section {
 }
 
 .sliding-item:hover {
-   transform: scale(1.5);
+   transform: scale(1.2);
    z-index: 2; 
    opacity: 1;
    box-shadow: none;
 }
 
 .sliding-item:focus  {
-   transform: scale(1.5);
+   transform: scale(1.2);
    z-index: 2; 
    opacity: 1;
    box-shadow: none;

@@ -13,11 +13,13 @@ class VideoItem extends React.Component{
     
 
         return(
-            <div className='vi-img-container'>
-                <Link to={`/videos/${video._id}`}><img src={image} className='vi-img' /></Link>
-                {/* {video.industry} */}
-                {/* <video src={`/api/videos/stream/${video.file}`} controls></video> */}
-            </div>
+            
+                <div className='vi-img-container'>
+                    <Link to={`/videos/${video._id}`}><img src={image} className='vi-img' /></Link>
+                    {/* {video.industry} */}
+                    {/* <video src={`/api/videos/stream/${video.file}`} controls></video> */}
+                </div>
+            
         )
     }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import VideoItem from './video_item'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore from 'swiper'
+import {Helmet} from 'react-helmet'; 
 import thumbnail1 from '../../thumbnails/thumbnail1.png'
 import thumbnail2 from '../../thumbnails/thumbnail2.png'
 import thumbnail3 from '../../thumbnails/thumbnail3.png'
@@ -68,64 +69,76 @@ class VideoIndex extends React.Component {
         const { videos } = this.props;
         return(
             <div className='vi-container'>
+                <img className="banner" src="popular.png" alt="" />
+                <h2 className='vi-question'><span className='trending'>Today's Top Question: </span> {questions[0]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[0]}</h2>
+                    {/* <button className='previous-button'>left</button>
+                    <button className='next-button'>right</button> */}
+                    {/* <div className='vi-thumbnail'> */}
                     <div className='vi-thumbnail'>
-                        {/* <Swiper className="vi-swipe"> */}
-                            {
-                                videos.map((video, idx) => (
-                                    questions[0] === video.question ? 
-                                    // <SwiperSlide className='vi-slide'>
-                                        <VideoItem key={idx} video={video} image={pics[idx]} />
-                                        // </SwiperSlide>
-                                         : null
-                                ))
-                            }
-                        {/* </Swiper> */}
+                    <div className='vi-img-wrapper'>
+                        {videos.map((video, idx) => (
+                            questions[0] === video.question ? 
+                            <VideoItem key={idx} video={video} image={pics[idx]} />: null))
+                        }
+                    </div>
                     </div>
                 </div>
+               
+
+                <h2 className='vi-question'><span className='trending'>Unconfident? Try This: </span>{questions[1]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[1]}</h2>
                     <div className='vi-thumbnail'>
+                        <div className='vi-img-wrapper'>
                         {
                             videos.map((video, idx) => (
                                 questions[1] === video.question ? 
                                 <VideoItem key={idx} video={video} image={pics[idx]} /> : null
                             ))
                         }
+                        </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'><span className='trending'>Trending Question: </span>{questions[2]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[2]}</h2>
                     <div className='vi-thumbnail'>
+                        <div className='vi-img-wrapper'>
                         {
                             videos.map((video, idx) => (
                                 questions[2] === video.question ? 
                                 <VideoItem key={idx} video={video} image={pics[idx]} /> : null
                             ))
                         }
+                        </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'><span className='trending'>Just for You: </span> {questions[3]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[3]}</h2>
                     <div className='vi-thumbnail'>
+                        <div className='vi-img-wrapper'>
                         {
                             videos.map((video, idx) => (
                                 questions[3] === video.question ? 
                                 <VideoItem key={idx} video={video} image={pics[idx]} /> : null
                             ))
                         }
+                        </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'><span className='trending'>Inspired By: </span>{questions[4]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[4]}</h2>
                     <div className='vi-thumbnail'>
+                        <div className='vi-img-wrapper'>
                         {
                             videos.map((video, idx) => (
                                 questions[4] === video.question ? 
                                 <VideoItem key={idx} video={video} image={pics[idx]} /> : null
                             ))
                         }
+                        </div>
                     </div>
                 </div>
             </div>
