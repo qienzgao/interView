@@ -30,11 +30,19 @@ import thumbnail20 from '../../thumbnails/thumbnail20.png'
 class VideoShowPage extends React.Component {
     constructor(props) {
         super(props);
+
+        this.renderTitle = this.renderTitle.bind(this);
     }
 
     // componentDidMount(){
         // this.props.fetchVideo(this.props.videoId)
     // }
+
+    renderTitle() {
+        debugger
+        if (this.props.video === undefined) return null;
+        return <h1>{this.props.video.question}</h1>;
+    }
 
     render() {
 
@@ -68,6 +76,8 @@ class VideoShowPage extends React.Component {
                 <div className='mainbox'>
                     <div className='playing-video-container'>
                         <ShowVideoDisplay video={this.props.video} fetchVideo={this.props.fetchVideo} videoId={this.props.videoId}/>
+                        {this.renderTitle()}
+                        {/* <h2>{this.props.video.question}</h2> */}
                         <ShowFeedbacksContainer videoId={this.props.videoId} history={this.props.history}/>
                     </div>
                     <div className='sidebar'>
