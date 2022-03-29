@@ -75,9 +75,8 @@ class VideoShowPage extends React.Component {
             <div className='show-video-background'>
                 <div className='mainbox'>
                     <div className='playing-video-container'>
-                        <ShowVideoDisplay video={this.props.video} fetchVideo={this.props.fetchVideo} videoId={this.props.videoId}/>
                         {this.renderTitle()}
-                        {/* <h2>{this.props.video.question}</h2> */}
+                        <ShowVideoDisplay video={this.props.video} fetchVideo={this.props.fetchVideo} videoId={this.props.videoId}/>
                         <ShowFeedbacksContainer videoId={this.props.videoId} history={this.props.history}/>
                     </div>
                     <div className='sidebar'>
