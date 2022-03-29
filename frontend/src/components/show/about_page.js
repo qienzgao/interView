@@ -4,13 +4,20 @@ import {Link} from 'react-router-dom';
 class AboutLinks extends React.Component {
     constructor(props){
         super(props)
+        this.closeModal = this.closeModal.bind(this);
     }
+
+    closeModal() {
+        this.props.history.goBack()
+        return false;
+    }
+
     render(){
         return(
             <div className='create-form-background'>
                 <div className="vf">
                     <Link to="/videoindex">
-                        <button onClick={()=>this.props.history.goBack()} className="close-button">
+                        <button onClick={() => this.closeModal} className="close-button">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </Link>
