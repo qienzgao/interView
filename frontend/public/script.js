@@ -14,18 +14,18 @@
 //     positiveBox.classList.add('unshow')
 // };
 
-const rows = [...document.querySelectorAll('.vi-row')]; 
-const nextButton = [...document.querySelectorAll('.next-button')];
-const previousButton = [...document.querySelectorAll('.previous-button')];
-console.log(nextButton)
-rows.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect(); 
-    let containerWidth = containerDimensions.width; 
-    nextButton[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth; 
-    }); 
-    previousButton[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth; 
-    })
-})
+// const rows = [...document.querySelectorAll('.vi-row')]; 
+// const nextButton = [...document.querySelectorAll('.next-button')];
+// const previousButton = [...document.querySelectorAll('.previous-button')];
+
+// rows.forEach((item, i) => {
+//     let containerDimensions = item.getBoundingClientRect(); 
+//     let containerWidth = containerDimensions.width; 
+//     nextButton[i].addEventListener('click', () => {
+//         item.scrollLeft += containerWidth; 
+//     }); 
+//     previousButton[i].addEventListener('click', () => {
+//         item.scrollLeft -= containerWidth; 
+//     })
+// })
 

@@ -69,12 +69,12 @@ class VideoIndex extends React.Component {
         const { videos } = this.props;
         return(
             <div className='vi-container'>
-                {/* <Helmet><script src="script.js">
-                </script></Helmet> */}
+                {/* <img className="banner" src="interview.png" alt="" /> */}
+           
+                <h2 className='vi-question'>{questions[0]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[0]}</h2>
-                    <button className='previous-button'>left</button>
-                    <button className='next-button'>right</button>
+                    {/* <button className='previous-button'>left</button>
+                    <button className='next-button'>right</button> */}
                     {/* <div className='vi-thumbnail'> */}
                     <div className='vi-thumbnail'>
                     <div className='vi-img-wrapper'>
@@ -85,9 +85,10 @@ class VideoIndex extends React.Component {
                     </div>
                     </div>
                 </div>
+               
 
+                <h2 className='vi-question'>{questions[1]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[1]}</h2>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
                         {
@@ -99,8 +100,9 @@ class VideoIndex extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'>{questions[2]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[2]}</h2>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
                         {
@@ -112,8 +114,9 @@ class VideoIndex extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'>{questions[3]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[3]}</h2>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
                         {
@@ -125,8 +128,9 @@ class VideoIndex extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <h2 className='vi-question'>{questions[4]}</h2>
                 <div className='vi-row'>
-                    <h2 className='vi-question'>{questions[4]}</h2>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
                         {

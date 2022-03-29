@@ -113,7 +113,7 @@
 }
 
 .load-button-container {
-     margin: 20px 20px 10px 20px;
+     margin: 15px 20px 0px 20px;
      height: 45px;
      width: 45px;
      border-radius: 100%;
@@ -123,7 +123,7 @@
 .button-function {
     font-size: 13px;
     font-weight: 550;
-    padding: 2px; 
+    /* padding: 2px;  */
     width: auto;
     opacity: 0;
     color: rgb(80, 80, 80); 
