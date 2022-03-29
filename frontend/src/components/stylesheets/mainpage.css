@@ -229,7 +229,7 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+    max-height: 100%;
 }
 
 .last-section::before { 
@@ -258,6 +258,7 @@ section {
 
 .slogan3-container h1 {
     position: relative;
+    font-size: 0.6em;
 }
 
 .slogan3-container h1::after {
