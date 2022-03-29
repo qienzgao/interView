@@ -69,9 +69,8 @@ class VideoIndex extends React.Component {
         const { videos } = this.props;
         return(
             <div className='vi-container'>
-                {/* <img className="banner" src="interview.png" alt="" /> */}
-           
-                <h2 className='vi-question'>{questions[0]}</h2>
+                <img className="banner" src="popular.png" alt="" />
+                <h2 className='vi-question'><span className='trending'>Today's Top Question: </span> {questions[0]}</h2>
                 <div className='vi-row'>
                     {/* <button className='previous-button'>left</button>
                     <button className='next-button'>right</button> */}
@@ -87,7 +86,7 @@ class VideoIndex extends React.Component {
                 </div>
                
 
-                <h2 className='vi-question'>{questions[1]}</h2>
+                <h2 className='vi-question'><span className='trending'>Unconfident? Try This: </span>{questions[1]}</h2>
                 <div className='vi-row'>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
@@ -101,7 +100,7 @@ class VideoIndex extends React.Component {
                     </div>
                 </div>
 
-                <h2 className='vi-question'>{questions[2]}</h2>
+                <h2 className='vi-question'><span className='trending'>Trending Question: </span>{questions[2]}</h2>
                 <div className='vi-row'>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
@@ -115,7 +114,7 @@ class VideoIndex extends React.Component {
                     </div>
                 </div>
 
-                <h2 className='vi-question'>{questions[3]}</h2>
+                <h2 className='vi-question'><span className='trending'>Just for You: </span> {questions[3]}</h2>
                 <div className='vi-row'>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
@@ -129,7 +128,7 @@ class VideoIndex extends React.Component {
                     </div>
                 </div>
 
-                <h2 className='vi-question'>{questions[4]}</h2>
+                <h2 className='vi-question'><span className='trending'>Inspired By: </span>{questions[4]}</h2>
                 <div className='vi-row'>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>

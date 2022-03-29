@@ -1,31 +1,48 @@
 .vi-container{
-    padding: 5rem 3rem 5rem 3rem;
+    padding: 6rem 3rem 6rem 3rem;
     /* padding-left: 13rem; */
-    background-color: rgba(243, 243, 243, 0.719);
+    background-color: rgba(255, 255, 255, 0.719);
 }
 
 /* .vi-container:nth-child(even){
     background-color: grey;
 } */
 
+.banner {
+    width: 100%;
+}
+
 
 .vi-row{
     /* padding-bottom: 3vh; */
     position: relative; 
     overflow: hidden;
-    padding: 0.5em 1em 0.5em 1em; 
+    padding: 0.5em; 
     height: auto;
     margin-bottom: 3%;
-    /* background-color: rgb(255, 255, 255); */
+    background-color: rgba(198, 166, 187, 0.1);
 }
 
 .vi-question{
     font-size: 25px;
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, rgb(9, 99, 54) , rgba(255, 255, 255, 0));
+    color: rgba(75,69,69,255);
+    /* background-image: linear-gradient(to right, rgb(9, 99, 54) , rgba(255, 255, 255, 0)); */
+    /* background-color: green ; */
     padding: 0.5em; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 20px;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+.trending {
+    /* background-color: rgb(100, 100, 100); */
+    color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to right, rgb(231, 223, 103) , rgb(122, 181, 236)); */
+    background-color: rgba(41,90,119,255);
+    padding: 0 0.5em 0 0.5em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    font-weight: 400;
 }
 
 /* .vi-thumbnail{
@@ -61,12 +78,13 @@
     height: auto;
     margin-right: 20px;
     transition: all 0.3s ease-in-out ;
-    transition-delay: 0.2s;
+    /* transition-delay: 0.2s; */
     background-image: url(../../../public/comming.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-color: gray;
+    margin: 0.5em;
 }
 
 
