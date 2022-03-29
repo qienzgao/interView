@@ -59,7 +59,7 @@ z
       <div className='create-form-background'>
         <form className="vf">
           <div className='vf-title'>
-            <h1>Create your View</h1>
+            <h1>Upload interview response</h1>
             <Link to="/videoindex">
               <button onClick={this.goBack} className="close-button">
                 <span aria-hidden="true">&times;</span>
@@ -73,11 +73,11 @@ z
               <input className='vf-upload' type="file" onChange={this.handleChange('file')} style={this.state.file ? { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/success.png)` } : { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/videoupload.png)`} }>
               </input>
               <span className='upload-text'>Drag and drop your View to upload</span>
-              <button className='vf-submit' onClick={this.handleSubmit}>Create</button>
+              <button className='vf-submit' onClick={this.handleSubmit}>Submit</button>
             </div>
 
             <div className='vf-detail-container'>
-                <h2>Tell us a bit about you and your View</h2>
+                <h2>Tell us about yourself and your video</h2>
 
                 <input list ="question" 
                   id='vf-question' 
