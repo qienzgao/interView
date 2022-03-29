@@ -39,7 +39,6 @@ class VideoShowPage extends React.Component {
     // }
 
     renderTitle() {
-        debugger
         if (this.props.video === undefined) return null;
         return <h1>{this.props.video.question}</h1>;
     }

@@ -52,6 +52,7 @@ z
 
     goBack(){
       this.props.history.goBack();
+      return false;
     }
 
   render() {
@@ -61,7 +62,7 @@ z
           <div className='vf-title'>
             <h1>Upload interview response</h1>
             <Link to="/videoindex">
-              <button onClick={this.goBack} className="close-button">
+              <button onClick={() => this.goBack} className="close-button">
                 <span aria-hidden="true">&times;</span>
               </button>
             </Link>
